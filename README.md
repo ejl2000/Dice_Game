@@ -2,7 +2,7 @@ Dice Game  - Author: Emma Lee
 
 Overview
 
-This is a simple and interactive Dice Game where a user competes against the computer. Both the user and the computer roll a pair of dice three times, and the scores are calculated based on the dice results. The player with the highest accumulated score after three rounds wins the game. The game has a fun and engaging design with a feminine color scheme and animations.
+This is a simple and interactive Dice Game where a user competes against the computer. Both the user and the computer roll a pair of dice three times, and the scores are calculated based on the dice results. The player with the highest accumulated score after three rounds wins the game. The game has a fun and engaging design with a fun color scheme and animations.
 
 Features
 
@@ -18,8 +18,6 @@ HTML: The structure of the game.
 CSS: Styling of the game, compiled from SASS for better organization.
 JavaScript: Logic for the game, including random dice roll, score calculation, and animations.
 SASS: Used for styling, with variables and mixins to enhance reusability.
-jQuery (optional): For potential DOM manipulation and enhanced interactivity.
-How to Play
 
 Click the Roll Dice button to roll the dice for both the player and the computer.
 The game will show the current roll and the score for each round.
