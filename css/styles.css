@@ -1,0 +1,86 @@
+/* Compiled from SASS (styles.scss) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fce4f1;
+  color: #4a148c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid orchid;
+  background: linear-gradient(135deg, #fce4f1 50%, orchid 50%);
+}
+
+h1 {
+  color: #880e4f;
+  font-size: 3em;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.score {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.dice img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  transition: transform 0.2s ease;
+}
+
+.dice img:hover {
+  transform: scale(1.2);
+}
+
+button {
+  background-color: #f44336;
+  border: none;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 15px;
+}
+
+button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+#winner-message {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: yellow;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

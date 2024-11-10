@@ -1,0 +1,107 @@
+// SASS Variables
+$bg-color: #fce4f1;
+/* Soft pink background */
+$text-color: #4a148c;
+/* Dark purple text */
+$primary-color: #e91e63;
+/* Bright pink for buttons and accents */
+$secondary-color: #9c27b0;
+/* Purple for headings and highlights */
+$button-color: #f44336;
+/* Red for buttons */
+$hover-button-color: #d32f2f;
+/* Darker red for hover */
+$heading-color: #880e4f;
+/* Deep pink for headings */
+$font-stack: 'Arial', sans-serif;
+
+// Mixin for button styling
+@mixin button-style {
+    background-color: $button-color;
+    border: none;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $hover-button-color;
+        transform: scale(1.1);
+    }
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $bg-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid $secondary-color;
+    background: linear-gradient(135deg, $bg-color 50%, $secondary-color 50%);
+}
+
+h1 {
+    color: $heading-color;
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dice img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    transition: transform 0.2s ease;
+}
+
+.dice img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    @include button-style;
+    margin: 15px;
+}
+
+#winner-message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
