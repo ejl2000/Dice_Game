@@ -1,0 +1,15 @@
+{
+  "name": "lee_emma_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "nodemon -e scss -x \"sass src/scss/style.scss src/css/style.css --no-source-map\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "sass": "^1.81.0"
+  }
+}
